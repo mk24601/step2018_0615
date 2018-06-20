@@ -1,7 +1,7 @@
 
 def linksearch(num,t,reachedlist,wiki):
     nextlist = []
-    if t  == 7:
+    if t  == 7:#深さt-1まで探索する ←の例の場合深さ6まで探索する
         return
     else:
         print("見つかった単語の数 -> " + str(len(reachedlist)))
@@ -14,7 +14,7 @@ def linksearch(num,t,reachedlist,wiki):
             linksearch(w,t+1,reachedlist,wiki)
 
 if __name__ == '__main__':
-    wordnum = 0 #0番の単語から探索開始
+    wordnum = 0 #0番の単語(アンパサンド)から探索開始 ここを変えると開始単語も変わる
     flinks = open('links.txt','r')
     wiki = []
     reachedlist = []
