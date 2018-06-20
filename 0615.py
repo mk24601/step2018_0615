@@ -20,6 +20,7 @@ if __name__ == '__main__':
     reachedlist = []
     reachedlist.append(int(wordnum))
 
+    #links.txtの内容をメモリに読み込む
     for i in range(1483277):
         wiki.append([])
         #print("wiki["+str(i)+"] = "+str(wiki[i]))
